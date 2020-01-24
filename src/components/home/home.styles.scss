@@ -1,0 +1,24 @@
+.home {
+     height: 90%;
+     display: grid;
+     margin-top: 20px;
+     grid-template-rows: repeat(3, 1fr);
+     grid-template-columns: repeat(4, 1fr);
+     grid-column-gap: 20px;
+     grid-template-areas: "side timer timer timer"
+                         "side content content content"
+                         "side footer footer footer";
+
+     &__sidebar {
+          grid-area: side;
+     }
+     &__timer {
+          grid-area: timer;
+     }
+     &__game-content {
+          grid-area: content;
+     }
+     &__game-footer {
+          grid-area: footer;
+     }
+}
