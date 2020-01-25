@@ -5,7 +5,7 @@ class Login extends Component {
     render() {
         return (
             <div className="block shadow p-3">
-                <div class="p-3 mb-2 mb-3 text-white block__heading d-flex justify-content-center">
+                <div className="p-3 mb-2 mb-3 text-white block__heading d-flex justify-content-center">
                     Log in
                 </div>
                 <form>

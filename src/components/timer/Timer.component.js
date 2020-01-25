@@ -9,35 +9,35 @@ class Countdown extends Component {
             hour = minute * 60,
             day = hour * 24;
 
-        let countDown = new Date("Sep 30, 2020 00:00:00").getTime(),
-            x = setInterval(function() {
-                let now = new Date().getTime(),
-                    distance = countDown - now;
+        let countDown = new Date("Sep 30, 2020 00:00:00").getTime();
+        setInterval(function() {
+            let now = new Date().getTime(),
+                distance = countDown - now;
 
-                document.getElementById("days").innerText = Math.floor(
-                    distance / day
-                );
-                document.getElementById("hours").innerText = Math.floor(
-                    (distance % day) / hour
-                );
-                document.getElementById("minutes").innerText = Math.floor(
-                    (distance % hour) / minute
-                );
-                document.getElementById("seconds").innerText = Math.floor(
-                    (distance % minute) / second
-                );
+            document.getElementById("days").innerText = Math.floor(
+                distance / day
+            );
+            document.getElementById("hours").innerText = Math.floor(
+                (distance % day) / hour
+            );
+            document.getElementById("minutes").innerText = Math.floor(
+                (distance % hour) / minute
+            );
+            document.getElementById("seconds").innerText = Math.floor(
+                (distance % minute) / second
+            );
 
-                //do something later when date is reached
-                //if (distance < 0) {
-                //  clearInterval(x);
-                //  'IT'S MY BIRTHDAY!;
-                //}
-            }, second);
+            //do something later when date is reached
+            //if (distance < 0) {
+            //  clearInterval(x);
+            //  'IT'S MY BIRTHDAY!;
+            //}
+        }, second);
     }
 
     render() {
         return (
-            <div class="counter d-flex w-100 flex-column align-items-center">
+            <div className="counter d-flex w-100 flex-column align-items-center">
                 <Heading heading="Time remaining" />
                 <div className="mt-3 w-75">
                     <div className="time-wrapper w-100 d-flex justify-content-between">

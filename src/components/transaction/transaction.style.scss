@@ -1,0 +1,14 @@
+@import "../../variable.scss";
+@import "../../mixins.scss";
+
+.qr-code {
+     height: 200px;
+     width:auto;
+}
+
+.deposit {
+     @include small-button;
+     background-color: $primaryColor;
+     box-shadow: inset 0 0 2px $primaryColor;
+     color: $textColor;
+}

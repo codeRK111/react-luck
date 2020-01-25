@@ -3,6 +3,7 @@ import "./home.styles.scss";
 import Header from "../header/Header.component.js";
 import Counter from "../timer/Timer.component.js";
 import History from "../history/History.component.js";
+import Game from "../game-content/Game.component.js";
 
 class Home extends Component {
     render() {
@@ -16,7 +17,9 @@ class Home extends Component {
                     <div className="home__timer bg-dark p-3">
                         <Counter />
                     </div>
-                    <div className="home__game-content bg-dark"></div>
+                    <div className="home__game-content bg-dark p-3">
+                        <Game />
+                    </div>
                     <div className="home__game-footer bg-dark"></div>
                 </div>
             </>

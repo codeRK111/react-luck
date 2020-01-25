@@ -1,0 +1,10 @@
+@import "../../../variable.scss";
+
+
+.closeIcon {
+     cursor: pointer;
+
+     &:hover {
+          color: $headingcolor;
+     }
+}

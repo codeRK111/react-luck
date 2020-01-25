@@ -1,0 +1,32 @@
+@import "../../variable.scss";
+@import "../../mixins.scss";
+
+.game {
+     .play-wrapper {
+          .game--play {
+               background-color: $primaryColor;
+               border: 0; 
+               padding: 1rem 2rem;
+               font-size: 2rem;
+               font-weight: 600;
+               border-radius: 10px;
+               box-shadow: inset 0 0 3px #000000;
+          }
+     }
+
+     .buy-wrapper {
+          .game--deposit {
+              @include small-button;
+              margin-right: 2rem; 
+              background-color: $secondaryColor-1;
+              box-shadow: inset 0 0 2px $secondaryColor-1;
+              color: $textColor;
+          }
+          .game--luck {
+              @include small-button;
+              background-color: $secondaryColor-2;
+              box-shadow: inset 0 0 2px $secondaryColor-2;
+              color: $textColor;
+          }
+     }
+}
